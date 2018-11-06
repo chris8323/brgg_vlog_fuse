@@ -1,0 +1,15 @@
+<App>
+	<iOS.StatusBarConfig Style="Light" />
+	<Android.StatusBarConfig Color="#022328" />
+	
+	<Router ux:Name="router" />	
+
+	<ClientPanel> 
+		<Navigator DefaultPath="splash">
+			<splash ux:Template="splash" router="router" />
+			<listCalendar ux:Template="listCalendar" router="router" />
+			<detail ux:Template="detail" router="router" />
+		</Navigator>
+	</ClientPanel>	
+
+</App>

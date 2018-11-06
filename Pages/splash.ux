@@ -1,0 +1,20 @@
+<Page ux:Class="splash">
+	<Router ux:Dependency="router" />
+
+	<JavaScript>		
+		function go_listCalendar() {
+			router.push("listCalendar");
+		}
+
+		module.exports = {
+			go_listCalendar: go_listCalendar
+		};
+	</JavaScript>
+
+	<ClientPanel>
+		<Text Value="BRGG Vlog" TextAlignment="Center" FontSize=20/>
+		<Text Value="One Day One Log" TextAlignment="Center" FontSize=20/>
+		<TextBox Value="Test User ID" InputHint="Integer"/>
+		<Button Text="Login"  />
+	</ClientPanel>
+</Page>

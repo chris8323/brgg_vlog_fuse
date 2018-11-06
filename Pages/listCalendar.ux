@@ -1,0 +1,22 @@
+<Page ux:Class="listCalendar">
+	<Router ux:Dependency="router" />
+
+	<JavaScript>		
+		function go_splash() {
+			router.push("go_splash");
+		}
+
+		function go_detail() {
+			router.push("go_detail");
+		}
+
+		module.exports ={
+			go_splash: go_splash
+			go_detail: go_detail
+		};
+	</JavaScript>
+
+	<Text Value="listCalendar"/>
+	<Button Text="Logout" Clicked="{go_splash}" />
+	<Button Text="Detail" Clicked="{go_detail}" />
+</Page>
