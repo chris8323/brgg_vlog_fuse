@@ -1,0 +1,49 @@
+<Page ux:Class="VlogEdit">
+	<Router ux:Dependency="router" />
+	<JavaScript File="VlogEdit.js" />
+
+	<ClientPanel>
+		<ScrollView Margin="0, 0, 0, 90">
+			<StackPanel Margin="10, 10, 10, 10" ItemSpacing="5">
+
+
+				<Text Value="VLOG EDIT" TextAlignment="Center" Margin="0, 30, 0, 30" FontSize="40" />
+
+				<Text>video_id:</Text>
+				<TextBox Value="{vlog_id}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>user_id:</Text>
+				<TextBox Value="{user_id}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>create_date:</Text>
+				<TextBox Value="{create_date}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>log_date:</Text>
+				<TextBox Value="{log_date}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>feeling:</Text>
+				<TextBox Value="{feeling}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+				
+				<Text>tag:</Text>
+				<TextBox Value="{tag}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>video_link:</Text>
+				<TextBox Value="{video_link}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>thumbnail_link:</Text>
+				<TextBox Value="{thumbnail_link}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>video_ptime:</Text>
+				<TextBox Value="{video_ptime}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+			</StackPanel>
+		</ScrollView>
+		<DockPanel>				
+			<Grid ChildOrder="ColumnMajor">
+				<Button Text="Cancel" Clicked="{goBack}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+				<Button Text="Save" Clicked="{goBack}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+			</Grid>
+		</DockPanel>
+
+	</ClientPanel>
+</Page>

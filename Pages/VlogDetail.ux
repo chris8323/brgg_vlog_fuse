@@ -1,0 +1,50 @@
+<Page ux:Class="VlogDetail">
+	<Router ux:Dependency="router" />
+	<JavaScript File="VlogDetail.js" />
+
+	<ClientPanel>
+		<ScrollView Margin="0, 0, 0, 90">
+			<StackPanel Margin="10, 10, 10, 10" ItemSpacing="5">
+
+
+				<Text Value="VLOG DETAIL" TextAlignment="Center" Margin="0, 30, 0, 30" FontSize="40" />
+
+				<Text>video_id:</Text>
+				<Text Value="{vlog_id}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>user_id:</Text>
+				<Text Value="{user_id}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>create_date:</Text>
+				<Text Value="{create_date}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>log_date:</Text>
+				<Text Value="{log_date}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>feeling:</Text>
+				<Text Value="{feeling}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+				
+				<Text>tag:</Text>
+				<Text Value="{tag}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>video_link:</Text>
+				<Text Value="{video_link}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>thumbnail_link:</Text>
+				<Text Value="{thumbnail_link}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+				<Text>video_ptime:</Text>
+				<Text Value="{video_ptime}" Margin="0, 0, 0, 10" Padding="10, 10, 10, 10" />
+
+			</StackPanel>
+		</ScrollView>
+		<DockPanel>
+			<Grid ChildOrder="ColumnMajor">
+				<Button Text="List" Clicked="{goToListCalendar}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+				<Button Text="Edit" Clicked="{goToVlogEdit}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+			</Grid>
+			<SolidColor />
+			
+		</DockPanel>
+	</ClientPanel>
+</Page>

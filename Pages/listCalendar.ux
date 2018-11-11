@@ -1,22 +1,19 @@
-<Page ux:Class="listCalendar">
+<Page ux:Class="ListCalendar">
 	<Router ux:Dependency="router" />
 
-	<JavaScript>		
-		function go_splash() {
-			router.push("go_splash");
-		}
+	<JavaScript File="ListCalendar.js"/>
 
-		function go_detail() {
-			router.push("go_detail");
-		}
-
-		module.exports ={
-			go_splash: go_splash
-			go_detail: go_detail
-		};
-	</JavaScript>
-
-	<Text Value="listCalendar"/>
-	<Button Text="Logout" Clicked="{go_splash}" />
-	<Button Text="Detail" Clicked="{go_detail}" />
+	<ClientPanel>
+		<ScrollView Alignment="Default" Margin="0, 0, 0, 90">
+			<StackPanel ItemSpacing="10" Alignment="Top">
+				<Text Value="VLOG LIST" TextAlignment="Center" Margin="0, 30, 0, 30" FontSize="40" />
+				<Each Items="{vlogs}">
+					<Button Text="log_no: {vlog_id} / user_no: {user_id} / date: {log_date}" Clicked="{goToDetail}" />
+				</Each>
+			</StackPanel>
+		</ScrollView>
+		<DockPanel>
+			<Button Text="Logout" Clicked="{logout}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+		</DockPanel>
+	</ClientPanel>
 </Page>

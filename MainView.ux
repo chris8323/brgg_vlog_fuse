@@ -6,9 +6,10 @@
 
 	<ClientPanel> 
 		<Navigator DefaultPath="splash">
-			<splash ux:Template="splash" router="router" />
-			<listCalendar ux:Template="listCalendar" router="router" />
-			<detail ux:Template="detail" router="router" />
+			<Splash ux:Template="splash" router="router" />
+			<ListCalendar ux:Template="listCalendar" router="router" />
+			<VlogDetail ux:Template="vlogDetail" router="router" />
+			<VlogEdit ux:Template="vlogEdit" router="router" />
 		</Navigator>
 	</ClientPanel>	
 
