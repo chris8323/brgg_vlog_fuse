@@ -2,7 +2,7 @@ var vlogs = require("dummyVlog");
 
 function goToDetail(arg) {
 	var vlog = arg.data; //차후 특정 user_id의 vlog data만 전달하도록 수정 예정
-	router.push("vlogDetail", vlog)
+	router.push("practice", vlog)
 }
 
 function logout(){

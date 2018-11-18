@@ -10,6 +10,7 @@
 			<ListCalendar ux:Template="listCalendar" router="router" />
 			<VlogDetail ux:Template="vlogDetail" router="router" />
 			<VlogEdit ux:Template="vlogEdit" router="router" />
+			<practice ux:Template="practice" router="router" />
 		</Navigator>
 	</ClientPanel>	
 

@@ -1,7 +1,8 @@
 <Page ux:Class="ListCalendar">
 	<Router ux:Dependency="router" />
+	
 
-	<JavaScript File="ListCalendar.js"/>
+	<JavaScript File="ListCalendar.js" />
 
 	<ClientPanel>
 		<ScrollView Alignment="Default" Margin="0, 0, 0, 90">
