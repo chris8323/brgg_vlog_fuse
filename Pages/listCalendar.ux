@@ -14,7 +14,11 @@
 			</StackPanel>
 		</ScrollView>
 		<DockPanel>
-			<Button Text="Logout" Clicked="{logout}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+			<Grid ChildOrder="ColumnMajor">
+				<Button Text="Logout" Clicked="{logout}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+				<Button Text="Write" Clicked="{goToWrite}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+			</Grid>	
 		</DockPanel>
+		
 	</ClientPanel>
 </Page>

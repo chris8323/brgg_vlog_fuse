@@ -1,3 +1,0 @@
-<Page>
-	<Router ux:Dependency="router" />
-</Page>

@@ -1,0 +1,21 @@
+<Page ux:Class="WriteSuggest2">
+	<Router ux:Dependency="router" />
+	<JavaScript File="WriteSuggest2.js" />
+	<ClientPanel>
+		<StackPanel ItemSpacing="10" Alignment="Top">
+				<Text Value="키워드 추천" TextAlignment="Center" Margin="0, 30, 0, 30" FontSize="18" />
+
+		</StackPanel>
+		<StackPanel Alignment="Center">
+			<Text Value="{keywordSuggested}" TextAlignment="Center" Margin="0, 30, 0, 30" FontSize="25" />
+			<Button Text="이 주제로 이야기해볼래요" Clicked="{goToCamera}" Margin="10, 10, 10, 10" />
+			<Button Text="다른 키워드를 추천해주세요" Clicked="{keywordSuffling}" Margin="10, 10, 10, 10" />
+		</StackPanel>
+		<DockPanel>
+			<Grid ChildOrder="ColumnMajor">
+				<Button Text="Back" Clicked="{goBack}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+				
+			</Grid>	
+		</DockPanel>
+	</ClientPanel>
+</Page>

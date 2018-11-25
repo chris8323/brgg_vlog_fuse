@@ -1,0 +1,19 @@
+<Page ux:Class="WriteSuggest1">
+	<Router ux:Dependency="router" />
+	<JavaScript File="WriteSuggest1.js" />
+	<ClientPanel>
+		<StackPanel ItemSpacing="10" Alignment="Top">
+				<Text Value="하고 싶은 말이 있나요?" TextAlignment="Center" Margin="0, 30, 0, 30" FontSize="18" />
+		</StackPanel>
+		<StackPanel Alignment="Center">
+			<Button Text="네, 하고 싶은 말이 따로 있어요." Clicked="{goToCamera}" Margin="10, 10, 10, 10" />
+			<Button Text="아뇨, 무슨 말을 해야할 지 모르겠어요." Clicked="{goToSuggest2}" Margin="10, 10, 10, 10" />
+		</StackPanel>
+		<DockPanel>
+			<Grid ChildOrder="ColumnMajor">
+				<Button Text="Back" Clicked="{goBack}" Alignment="Bottom" Margin="0, 30, 0, 30" />
+				
+			</Grid>	
+		</DockPanel>
+	</ClientPanel>
+</Page>

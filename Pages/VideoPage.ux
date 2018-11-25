@@ -1,0 +1,21 @@
+<Page ux:Class="VideoPage">
+	<Router ux:Dependency="router" />
+	<JavaScript>
+		var Observable = require("FuseJS/Observable");
+
+		var videoFilePath = Observable();
+
+		this.Parameter.onValueChanged(module, function(param) {
+			videoFilePath.value = param;
+		});
+
+		module.exports = {
+			videoFilePath: videoFilePath,
+			goBack: function() {
+				router.goBack();
+			}
+		};
+	</JavaScript>
+	<BackButton Clicked="{goBack}" Alignment="Bottom" />
+	<Video File="{videoFilePath}" AutoPlay="true" IsLooping="true" />
+</Page>	

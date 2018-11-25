@@ -11,6 +11,12 @@
 			<VlogDetail ux:Template="vlogDetail" router="router" />
 			<VlogEdit ux:Template="vlogEdit" router="router" />
 			<practice ux:Template="practice" router="router" />
+			<CameraPage ux:Template="cameraPage" router="router" />
+			<VideoPage ux:Template="videoPage" router="router" />
+			<WriteDate ux:Template="writeDate" router="router" />
+			<WriteSuggest1 ux:Template="writeSuggest1" router="router" />
+			<WriteSuggest2 ux:Template="writeSuggest2" router="router" />
+
 		</Navigator>
 	</ClientPanel>	
 

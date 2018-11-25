@@ -1,3 +1,6 @@
-<Page>
+<Page ux:Class="WriteTag">
 	<Router ux:Dependency="router" />
+	<JavaScript File="WriteTag.js" />
+	<ClientPanel>
+	</ClientPanel>
 </Page>

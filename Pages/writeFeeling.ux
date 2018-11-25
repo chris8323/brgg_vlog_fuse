@@ -1,3 +1,5 @@
-<Page>
+<Page ux:Class="WriteFeeling">
 	<Router ux:Dependency="router" />
+	<ClientPanel>
+	</ClientPanel>
 </Page>
