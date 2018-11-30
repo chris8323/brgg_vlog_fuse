@@ -2,11 +2,13 @@
 	<iOS.StatusBarConfig Style="Light" />
 	<Android.StatusBarConfig Color="#022328" />
 	
+	<JavaScript File="MainView.js" />
 	<Router ux:Name="router" />	
 
 	<ClientPanel> 
 		<Navigator DefaultPath="splash">
 			<Splash ux:Template="splash" router="router" />
+			<Signup ux:Template="signup" router="router" />
 			<ListCalendar ux:Template="listCalendar" router="router" />
 			<VlogDetail ux:Template="vlogDetail" router="router" />
 			<VlogEdit ux:Template="vlogEdit" router="router" />

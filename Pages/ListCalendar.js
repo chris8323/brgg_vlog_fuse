@@ -1,4 +1,8 @@
 var vlogs = require("dummyVlog");
+var Common = require("Modules/Common");
+var FileSystem = require("FuseJS/FileSystem");
+var Observable = require("FuseJS/Observable");
+
 
 function goToDetail(arg) {
 	var vlog = arg.data; //차후 특정 user_id의 vlog data만 전달하도록 수정 예정
@@ -10,10 +14,10 @@ function goToWrite(arg) {
 	router.push("writeDate", vlog)
 }
 
-function logout(){
-	//차후 로그인 정보만료 처리 추가 필요
-	router.push("splash")
-}
+function logout(){	
+	  FileSystem.deleteSync(Common.token_path)
+	  router.push("splash");
+}	
 
 module.exports = {
 	vlogs: vlogs,

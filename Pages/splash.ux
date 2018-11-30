@@ -6,28 +6,36 @@
 			router.push("listCalendar");
 		}
 
+		function goToSignup() {
+			router.push("signup");
+		}
+
 		module.exports = {
-			goToListCalendar: goToListCalendar
+			goToListCalendar: goToListCalendar,
+			goToSignup: goToSignup
 		};
 
 	</JavaScript>
 
 	<ClientPanel Alignment="Center">
-		<StackPanel Orientation="Vertical" Dock="Fill" Alignment="Center">
-			
-			<Text Value="BRGG VLOG" TextAlignment="Center" FontSize="50" Alignment="Center" />
-			<Text TextAlignment="Center" FontSize="20" Value="one day one log" />
+		<StackPanel Orientation="Vertical" Dock="Top" Alignment="Center" Margin="0, 0, 0, 0" ItemSpacing="5">			
+			<Text Value="BRGG VLOG" TextAlignment="Center" FontSize="50" Alignment="TopCenter" />
+			<Text TextAlignment="Center" FontSize="20" Value="one day one log" Margin="0, 0, 0, 100" />
+
+			<TextBox PlaceholderText="Email" PlaceholderColor="#999" InputHint="Email" FontSize="15" TextColor="#555" TransformOrigin="VerticalBoxCenter" Padding="10, 10, 10, 10" Margin="5, 5, 5, 5" />
+			<TextBox PlaceholderText="Password" PlaceholderColor="#999" FontSize="15" TextColor="#555" TransformOrigin="VerticalBoxCenter" Padding="10, 10, 10, 10" Margin="5, 5, 5, 5" IsPassword="True" />
+			<Button Text="Login" Margin="5, 10, 5, 5" Clicked="{goToListCalendar}">
+			</Button>
+			<Button Text="Signup" Margin="5, 10, 5, 5" Clicked="{goToSignup}" Opacity="0.7">
+			</Button>
 		</StackPanel>
 		
 		
 	</ClientPanel>
 	<DockPanel Alignment="BottomCenter" Padding="0, 0, 0, 10">
 		<StackPanel>
-			<TextBox InputHint="Integer" Value="Test할 User ID를 입력하세요" FontSize="10" TextColor="#999" TransformOrigin="VerticalBoxCenter" Padding="5, 5, 5, 5" Margin="5, 5, 5, 5" />
-			<Button Text="Login" Margin="5, 5, 5, 5" Clicked="{goToListCalendar}">
-			</Button>
-			<Button Text="Login with Facebook" Margin="5, 20, 5, 20" Opacity="0.327">
-			</Button>
+			
+			
 			<Text Value="바로가기 1기 VLOG팀" FontSize="8" TextAlignment="Center" Padding="0, 0, 0, 0" Margin="0, 20, 0, 0" TextColor="#ccc" />
 		</StackPanel>		
 	</DockPanel>

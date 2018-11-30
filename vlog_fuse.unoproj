@@ -3,11 +3,13 @@
   "Packages": [
     "Fuse",
     "FuseJS",
+    "Fuse.Alerts",
     "Fuse.Controls.CameraView",
     "Fuse.ImageTools",
   ],
   "Includes": [
     "*",
+    "**.js:FuseJS",
     "dummyVlog.js:Bundle"
   ],
   "Mobile": {
