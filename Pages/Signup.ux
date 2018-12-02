@@ -26,7 +26,7 @@
 		<DockPanel>				
 			<Grid ChildOrder="ColumnMajor">
 				<Button Text="Back" Clicked="{goBack}" Alignment="Bottom" Margin="0, 30, 0, 30" />
-				<Button Text="Signup" Alignment="Bottom" Margin="0, 30, 0, 30" />
+				<Button Text="Signup" Clicked="{signupCheck}" Alignment="Bottom" Margin="0, 30, 0, 30" />
 			</Grid>
 		</DockPanel>
 

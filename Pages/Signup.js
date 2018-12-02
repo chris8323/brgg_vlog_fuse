@@ -16,15 +16,16 @@ function signupCheck(){
   response = fetch(Common.url + "/user", 
                 {  method: 'POST', 
                   headers: { "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"},
-                     body: "email=" + email.value + "&password=" + password.value +
+                     body: "email=" + email.value + 
+                     	   "&password=" + password.value +
                            "&password_confirm=" + password_confirm.value + 
-                           "&nickname=" + nickname.value + 
+                           "&nickname=" + nickname.value 
                      })
               .then(function(response){ return response.json();})
               .then(function(data_from_server){
                   if (data_from_server.hasOwnProperty('token')){
                     FileSystem.writeTextToFile(Common.token_path, data_from_server['token'])
-                    router.goto("listCalendar");
+                    router.goto("listCalendar"); //서버 통신 이후 Router 경로
                   }else{
                     if (data_from_server == "err001"){
                       result_msg.value = "이미 가입된 회원입니다."
@@ -43,8 +44,8 @@ module.exports = {
 	goBack: goBack,
 	signupCheck: signupCheck,
 
-	email: email,
-	nickname: nickname,
-	password: password,
-	password_confirm: password_confirm,
+	email: email, //TextBox
+	nickname: nickname, //TextBox
+	password: password, //TextBox
+	password_confirm: password_confirm, //TextBox
 };
