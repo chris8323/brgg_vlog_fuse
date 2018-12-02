@@ -11,7 +11,7 @@ function goToDetail(arg) {
 
 function goToWrite(arg) {
 	var vlog = arg.data; //차후 특정 user_id의 vlog data만 전달하도록 수정 예정
-	router.push("writeDate", vlog)
+	router.push("vlogTest", vlog)
 }
 
 function logout(){	

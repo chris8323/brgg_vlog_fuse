@@ -12,6 +12,7 @@
 			<ListCalendar ux:Template="listCalendar" router="router" />
 			<VlogDetail ux:Template="vlogDetail" router="router" />
 			<VlogEdit ux:Template="vlogEdit" router="router" />
+			<VlogTest ux:Template="vlogTest" router="router" />
 			<practice ux:Template="practice" router="router" />
 			<CameraPage ux:Template="cameraPage" router="router" />
 			<VideoPage ux:Template="videoPage" router="router" />
